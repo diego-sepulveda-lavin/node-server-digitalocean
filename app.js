@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.json({msg:'Probando el micrófono'});
 });
 
+app.get("/api", (req,res) => {
+  res.json({msg:'Otra prueba fea'})
+})
+
 app.listen(port, () => {
   console.log("Up and running");
 });
